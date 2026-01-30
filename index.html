@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Văn Thị Mai Linh — Portfolio</title>
+    <meta name="description" content="Portfolio cá nhân của Văn Thị Mai Linh: dự án, kỹ năng, kinh nghiệm, liên hệ." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+<!-- Theme toggle (no JS) -->
+<input class="theme-toggle" type="checkbox" id="theme" aria-label="Đổi giao diện sáng/tối" />
+<div class="app">
+    <!-- Background decorations -->
+    <div class="bg">
+        <span class="blob b1" aria-hidden="true"></span>
+        <span class="blob b2" aria-hidden="true"></span>
+        <span class="grid" aria-hidden="true"></span>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container header__inner">
+            <a class="brand" href="#top" aria-label="Về đầu trang">
+                <span class="brand__dot"></span>
+                <span class="brand__text">VTML</span>
+            </a>
+
+            <!-- Mobile nav toggle -->
+            <input class="nav-toggle" type="checkbox" id="nav" aria-label="Mở menu" />
+            <label class="hamburger" for="nav" aria-hidden="true">
+                <span></span><span></span><span></span>
+            </label>
+
+            <nav class="nav">
+                <a href="#about">Giới thiệu</a>
+                <a href="#skills">Kỹ năng</a>
+                <a href="#projects">Dự án</a>
+                <a href="#experience">Kinh nghiệm</a>
+                <a href="#contact" class="nav__cta">Liên hệ</a>
+
+                <label class="theme-btn" for="theme" title="Đổi sáng/tối">
+                    <span class="theme-btn__icon" aria-hidden="true">☾</span>
+                    <span class="theme-btn__text">Theme</span>
+                </label>
+            </nav>
+        </div>
+    </header>
+
+    <main id="top">
+        <!-- Hero -->
+        <section class="hero container">
+            <div class="hero__content">
+                <p class="pill">👋 Xin chào, mình là</p>
+                <h1>
+                    <span class="grad">Văn Thị Mai Linh</span><br />
+                    Web Developer / Designer
+                </h1>
+                <p class="lead">
+                    Mình xây dựng website / landing page hiện đại, tối ưu trải nghiệm người dùng và hiệu năng.
+                    Đây là nơi mình tổng hợp dự án, kỹ năng và kinh nghiệm.
+                </p>
+
+                <div class="hero__actions">
+                    <a class="btn primary" href="#projects">Xem dự án</a>
+                    <a class="btn ghost" href="#contact">Liên hệ</a>
+                    <a class="btn link" href="https://github.com/" target="_blank" rel="noreferrer">GitHub ↗</a>
+                </div>
+
+                <div class="hero__stats">
+                    <div class="stat card">
+                        <div class="stat__num">10+</div>
+                        <div class="stat__label">Dự án</div>
+                    </div>
+                    <div class="stat card">
+                        <div class="stat__num">2+</div>
+                        <div class="stat__label">Năm kinh nghiệm</div>
+                    </div>
+                    <div class="stat card">
+                        <div class="stat__num">99%</div>
+                        <div class="stat__label">Tập trung UX</div>
+                    </div>
+                </div>
+            </div>
+
+            <aside class="hero__card card">
+                <div class="profile">
+                    <!-- Thay ảnh: đặt file avatar.jpg cùng thư mục, rồi đổi src -->
+                    <div class="avatar" role="img" aria-label="Ảnh đại diện"></div>
+
+                    <div class="profile__meta">
+                        <h2>Văn Thị Mai Linh</h2>
+                        <p class="muted">Hà Nội, Việt Nam • Sẵn sàng nhận dự án</p>
+                    </div>
+
+                    <div class="chips">
+                        <span class="chip">HTML/CSS</span>
+                        <span class="chip">JavaScript</span>
+                        <span class="chip">React</span>
+                        <span class="chip">UI/UX</span>
+                    </div>
+
+                    <div class="quick">
+                        <a class="quick__item" href="mailto:vanmailinh.10@gmail.com">
+                            <span aria-hidden="true">✉</span> Email
+                        </a>
+                        <a class="quick__item" href="https://linkedin.com/" target="_blank" rel="noreferrer">
+                            <span aria-hidden="true">in</span> LinkedIn
+                        </a>
+                        <a class="quick__item" href="https://facebook.com/" target="_blank" rel="noreferrer">
+                            <span aria-hidden="true">f</span> Facebook
+                        </a>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <p class="quote">
+                        “Thiết kế đẹp là điểm bắt đầu. Hiệu năng và trải nghiệm mượt mới là thứ giữ người dùng ở lại.”
+                    </p>
+                </div>
+            </aside>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="section container">
+            <div class="section__head">
+                <h2>Giới thiệu</h2>
+            </div>
+
+            <div class="grid-2">
+                <div class="card pad">
+                    <h3>Mình có thể giúp gì?</h3>
+                    <ul class="list">
+                        <li><span class="tick">✓</span> Xây dựng portfolio/landing page đẹp, responsive</li>
+                        <li><span class="tick">✓</span> Thiết kế UI theo brand, tối ưu chuyển đổi</li>
+                        <li><span class="tick">✓</span> Tối ưu tốc độ, SEO cơ bản, accessibility</li>
+                    </ul>
+                </div>
+
+                <div class="card pad">
+                    <h3>Thông tin</h3>
+                    <div class="info">
+                        <div class="info__row">
+                            <span class="muted">Email</span>
+                            <a href="mailto:vanmailinh.10gmail.com">vanmailinh.10@gmail.com</a>
+                        </div>
+                        <div class="info__row">
+                            <span class="muted">Vai trò</span>
+                            <span>Front-end / UI Developer</span>
+                        </div>
+                        <div class="info__row">
+                            <span class="muted">Tech</span>
+                            <span>HTML, CSS, JS, React</span>
+                        </div>
+                        <div class="info__row">
+                            <span class="muted">Ngôn ngữ</span>
+                            <span>Việt / English</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="section container">
+            <div class="section__head">
+                <h2>Kỹ năng</h2>
+            </div>
+
+            <div class="skills">
+                <div class="card pad">
+                    <h3>Front-end</h3>
+                    <div class="bars">
+                        <div class="bar">
+                            <div class="bar__top"><span>HTML5</span><span class="muted">Advanced</span></div>
+                            <div class="bar__track"><span style="--w: 92%"></span></div>
+                        </div>
+                        <div class="bar">
+                            <div class="bar__top"><span>CSS / Responsive</span><span class="muted">Advanced</span></div>
+                            <div class="bar__track"><span style="--w: 90%"></span></div>
+                        </div>
+                        <div class="bar">
+                            <div class="bar__top"><span>JavaScript</span><span class="muted">Intermediate</span></div>
+                            <div class="bar__track"><span style="--w: 78%"></span></div>
+                        </div>
+                        <div class="bar">
+                            <div class="bar__top"><span>React</span><span class="muted">Intermediate</span></div>
+                            <div class="bar__track"><span style="--w: 75%"></span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card pad">
+                    <h3>Thiết kế & Quy trình</h3>
+                    <div class="tags">
+                        <span class="tag">UI Design</span>
+                        <span class="tag">Design System</span>
+                        <span class="tag">Figma</span>
+                        <span class="tag">Accessibility</span>
+                        <span class="tag">SEO cơ bản</span>
+                        <span class="tag">Performance</span>
+                        <span class="tag">Git/GitHub</span>
+                        <span class="tag">Clean Code</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="section container">
+            <div class="section__head">
+                <h2>Dự án nổi bật</h2>
+                <p class="muted">Một vài dự án demo. Bạn thay bằng dự án thật + link GitHub/Live.</p>
+            </div>
+
+            <div class="projects">
+                <article class="project card">
+                    <div class="project__cover">
+                        <div class="project__badge">Featured</div>
+                        <div class="project__mock" aria-hidden="true"></div>
+                    </div>
+                    <div class="project__body">
+                        <h3>Landing Page — Product Launch</h3>
+                        <p class="muted">Thiết kế + cắt HTML/CSS, tối ưu tốc độ, responsive, CTA rõ ràng.</p>
+                        <div class="project__meta">
+                            <span class="chip small">HTML</span>
+                            <span class="chip small">CSS</span>
+                            <span class="chip small">SEO</span>
+                        </div>
+                        <div class="project__links">
+                            <a class="btn small ghost" href="#" aria-disabled="true">Live (demo)</a>
+                            <a class="btn small primary" href="#" aria-disabled="true">Source</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project card">
+                    <div class="project__cover">
+                        <div class="project__mock alt" aria-hidden="true"></div>
+                    </div>
+                    <div class="project__body">
+                        <h3>Portfolio — One Page</h3>
+                        <p class="muted">Bố cục rõ ràng, animation nhẹ, dark/light, tối ưu trải nghiệm đọc.</p>
+                        <div class="project__meta">
+                            <span class="chip small">Responsive</span>
+                            <span class="chip small">UX</span>
+                            <span class="chip small">GitHub Pages</span>
+                        </div>
+                        <div class="project__links">
+                            <a class="btn small ghost" href="#" aria-disabled="true">Live (demo)</a>
+                            <a class="btn small primary" href="#" aria-disabled="true">Source</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project card">
+                    <div class="project__cover">
+                        <div class="project__mock alt2" aria-hidden="true"></div>
+                    </div>
+                    <div class="project__body">
+                        <h3>UI Kit — Components</h3>
+                        <p class="muted">Tổng hợp button/card/form + guideline spacing/typography.</p>
+                        <div class="project__meta">
+                            <span class="chip small">Design System</span>
+                            <span class="chip small">Figma</span>
+                            <span class="chip small">CSS</span>
+                        </div>
+                        <div class="project__links">
+                            <a class="btn small ghost" href="#" aria-disabled="true">Preview</a>
+                            <a class="btn small primary" href="#" aria-disabled="true">File</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section id="experience" class="section container">
+            <div class="section__head">
+                <h2>Kinh nghiệm</h2>
+            </div>
+
+            <div class="timeline card pad">
+                <div class="tl-item">
+                    <div class="tl-dot" aria-hidden="true"></div>
+                    <div class="tl-content">
+                        <div class="tl-top">
+                            <h3>Front-end Developer</h3>
+                            <span class="muted">2024 — Hiện tại</span>
+                        </div>
+                        <p class="muted">
+                            Xây dựng giao diện website/landing page, tối ưu responsive, cải thiện hiệu năng và trải nghiệm người dùng.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="tl-item">
+                    <div class="tl-dot" aria-hidden="true"></div>
+                    <div class="tl-content">
+                        <div class="tl-top">
+                            <h3>Freelance UI/UX</h3>
+                            <span class="muted">2022 — 2024</span>
+                        </div>
+                        <p class="muted">
+                            Thiết kế UI theo brand, dựng component, bàn giao file gọn gàng; phối hợp dev để triển khai nhanh.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section container">
+            <div class="section__head">
+                <h2>Liên hệ</h2>
+            </div>
+
+            <div class="grid-2">
+                <div class="card pad">
+                    <h3>Gửi email</h3>
+                    <p class="muted">Mình sẽ phản hồi sớm nhất có thể.</p>
+
+                    <div class="contact-actions">
+                        <a class="btn primary" href="mailto:vanmailinh.10@gmail.com?subject=H%E1%BB%A3p%20t%C3%A1c%20d%E1%BB%B1%20%C3%A1n&body=Ch%C3%A0o%20Ho%C3%A0ng%2C%0A%0AM%C3%ACnh%20mu%E1%BB%91n%20trao%20%C4%91%E1%BB%95i%20v%E1%BB%81%20d%E1%BB%B1%20%C3%A1n%3A%20...%0ADeadline%3A%20...%0ANg%C3%A2n%20s%C3%A1ch%3A%20...%0A%0AC%E1%BA%A3m%20%C6%A1n%21">
+                            Soạn email
+                        </a>
+                        <a class="btn ghost" href="#top">Lên đầu trang</a>
+                    </div>
+
+                    <div class="social">
+                        <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+                        <span class="dot">•</span>
+                        <a href="https://linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+                        <span class="dot">•</span>
+                        <a href="https://facebook.com/" target="_blank" rel="noreferrer">Facebook</a>
+                    </div>
+                </div>
+
+                <div class="card pad">
+                    <h3>Form</h3>
+                    <form class="form" onsubmit="return false;">
+                        <label>
+                            <span>Tên</span>
+                            <input type="text" placeholder="Tên của bạn" />
+                        </label>
+                        <label>
+                            <span>Email</span>
+                            <input type="email" placeholder="email@domain.com" />
+                        </label>
+                        <label>
+                            <span>Nội dung</span>
+                            <textarea rows="4" placeholder="Mô tả dự án / nhu cầu..."></textarea>
+                        </label>
+                        <button class="btn primary" type="submit">Gửi</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p class="muted">© <span id="y"></span> Văn Thị Mai Linh. Built with HTML/CSS.</p>
+            <p class="muted small">Tip: Bấm “Theme” để chuyển sáng/tối.</p>
+        </div>
+    </footer>
+</div>
+
+<!-- Tiny script only to set year (optional). Nếu bạn muốn "HTML+CSS thuần", có thể xoá đoạn này. -->
+<script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
